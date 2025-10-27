@@ -3,7 +3,7 @@ pipeline{
     environment {
         PYTHON='C:\\Users\\shivr\\AppData\\Local\\Programs\\Python\\Python314\\python.exe'
     }
-    trigger {
+    triggers {
         cron("*/1 * * * *")
     }
     stages {
