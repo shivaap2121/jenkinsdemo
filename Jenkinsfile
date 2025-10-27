@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Extract pipeline"){
             steps{
-                bat "${environment.PYTHON} extract_etl.py"
+                bat "${env.PYTHON} exttact_etl.py"
             }
         }
         }
