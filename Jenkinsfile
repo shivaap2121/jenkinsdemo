@@ -3,6 +3,9 @@ pipeline{
     environment {
         PYTHON='C:\\Users\\shivr\\AppData\\Local\\Programs\\Python\\Python314\\python.exe'
     }
+    trigger {
+        cron("*/1 * * * *")
+    }
     stages {
         stage("Checkout code"){
             steps{
