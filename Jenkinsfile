@@ -1,5 +1,5 @@
 pipeline{
-    agent: any
+    agent any
     environment{
         PYTHON='C:\\Users\\shivr\\AppData\\Local\\Programs\\Python\\Python314\\python.exe'
     }
