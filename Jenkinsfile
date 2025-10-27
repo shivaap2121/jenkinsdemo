@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    environment{
+    environment {
         PYTHON='C:\\Users\\shivr\\AppData\\Local\\Programs\\Python\\Python314\\python.exe'
     }
     stages {
@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Extract pipeline"){
             steps{
-                bat "${env.PYTHON} extract_etl.py"
+                bat "${environment.PYTHON} extract_etl.py"
             }
         }
         }
